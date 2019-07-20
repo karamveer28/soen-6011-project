@@ -1,0 +1,106 @@
+﻿\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+
+\title{SEP}
+\author{Karamveer Kaur}
+\date{July 2019}
+
+
+\begin{document}
+
+
+\maketitle
+\chapter{First Deliverable}
+\section{Description}
+Beta function also known as Eular Integral is defined by
+{\displaystyle \mathrm {B} (x,y)=\int _{0}^{1}t^{x-1}(1-t)^{y-1}\,dt}
+for Re x > 0, Re y > 0.
+Jacques Binet gave this name to the function.B is used to represent the Beta function.Beta function \newline
+describes the uncertainty of true values or probability distribution.
+
+
+\subsection{Domain and co-domain}
+
+
+Domain is positive real numbers
+Co-Domain is -∞ to +∞
+
+
+\subsection{Characteristics}
+
+
+Characteristics that make it unique
+1.Beta function is symmetric means that {\displaystyle \mathrm {B} (x,y)=\mathrm {B} (y,x).}
+2.  Another key property is its relation to gamma function which is described as follows:
+{\displaystyle \mathrm {B} (x,y)={\frac {\Gamma (x)\,\Gamma (y)}{\Gamma (x+y)}}.}
+
+
+\chapter{Functional requirements}
+
+
+Requirement of function based on style given in the ISO/IEC/IEEE 29148.
+   Requirement 1-First the input values of constants x and y should be taken by system.
+   Requirement 2-If the input values are negative values,message of error should be displayed.
+   Requirement 3-If the values are not the real numbers ,message of error should be displayed.
+   Requirement 4-If the range of the function is out of boundries from 0 to 1,output should be error ,message
+   Requirement 5-If the outputs are not generated within specific time frame,message of error should be displayed  
+
+
+\section{Unique identifiers}  
+
+
+Unique identifier of requirement-Number
+
+
+\section{Assumptions}
+
+
+1.The values of x and y are non-negative numbers.
+2.The values of x and y are real numbers.
+3.Divisor should not be zero.
+
+
+\section{Pseudocode}
+
+
+This  program calculates the beta function for given inputs 
+
+
+function BetaFunction(Argument x,Argument y) 
+    Calculate the Beta Function value by dividing the ceilingProduct to ceilingDivisor
+    
+    return the Beta Function Value
+    end
+
+
+function ceilingProduct(Argument x,Argument y)
+    Calculate ceilingProduct values by calculating product of rounded off \newline
+    values of arguements x and y to next integer value 
+    return ceilingProduct
+  
+end 
+
+
+function ceilingDivisor(Argument x,Argument y)
+    Calculate the ceilingDivisor by rounding off the \newline
+    sum of both arguments x and y to next integer value.\newline
+    Return ceilingDivisor
+  
+end 
+In the main function 
+     
+   print prompt "Input two numbers"\newline 
+   Take the input x and y\newline
+   call the betaFunction with arguements as x and y
+   
+  \section{Advantages and Disadvantages}
+  
+  \subsection{Advantages} 
+  1.-As program is divided into sub-functions its easy to program\newline
+  it into real problem.\newline
+  2.-As user defined values are used,so its easy to implement the program.
+  \subsection{Disadvantages}
+  1.-As the inputs are specified by the user,wide range of inputs can be missed.
+  2.-It uses bruteforce technique.
+   \end{document}
